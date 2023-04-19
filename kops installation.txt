@@ -89,7 +89,7 @@ You Created. --> Save.
 
 	   kops validate cluster
 	   
-11) Connect to the master node
+11) Connect to the master node (from the kops server)
      ssh -i ~/.ssh/id_rsa ubuntu@ipAddress
 
 12) To list nodes
