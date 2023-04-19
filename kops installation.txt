@@ -88,14 +88,15 @@ You Created. --> Save.
 10) Validate your cluster(KOPS will take some time to create cluster ,Execute below commond after 3 or 4 mins)
 
 	   kops validate cluster
- 
-11) To list nodes
+	   
+11) Connect to the master node
+     ssh -i ~/.ssh/id_rsa ubuntu@ipAddress
+
+12) To list nodes
 
 	  kubectl get nodes 
   
-  
-  
-To Delete Cluster
+13) To Delete Cluster
 
    kops delete cluster --name=${NAME} --state=${KOPS_STATE_STORE} --yes  
    
